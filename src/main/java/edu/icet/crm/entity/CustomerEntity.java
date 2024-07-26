@@ -1,15 +1,12 @@
 package edu.icet.crm.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "customer")
+@Getter
+@Setter
 public class CustomerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

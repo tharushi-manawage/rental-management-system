@@ -1,17 +1,14 @@
 package edu.icet.crm.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "rental")
+@Getter
+@Setter
 public class RentalEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
