@@ -10,6 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class RentalDetail {
+    private Long id;
     private double totalItemCost;
     private Integer qty;
 }
